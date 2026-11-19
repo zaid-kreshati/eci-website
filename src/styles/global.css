@@ -929,3 +929,6 @@ html[data-theme="dark"] ::selection { background: rgb(95 211 154 / 35%); color: 
 html[data-theme="dark"] :is(.quotation-band__actions, .news-newsletter) .button--primary { color: #0f3d2c; }
 html[data-theme="dark"] .ps-services ul { color: #b9c8c0; }
 html[data-theme="dark"] .news-pagination ol button { background: rgb(255 255 255 / 5%); }
+.contact-channels article > span { color: #0f3d2c; }
+html[data-theme="dark"] .contact-channels article > span { background: rgb(95 211 154 / 16%); color: var(--color-accent); box-shadow: inset 0 0 0 1px rgb(95 211 154 / 28%); }
+html[data-theme="dark"] .contact-channels { background: linear-gradient(180deg, #0c2a1f 0%, var(--color-background) 100%); }
