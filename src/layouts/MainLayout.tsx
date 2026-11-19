@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { SiteFooter } from "../components/layout/SiteFooter";
 import { SiteHeader } from "../components/layout/SiteHeader";
+import { QuoteModalProvider } from "../components/quote/QuoteModal";
 import { useScrollReveal } from "../hooks/useScrollReveal";
 import { useLanguage } from "../i18n/LanguageProvider";
 
@@ -9,6 +10,7 @@ export function MainLayout() {
   useScrollReveal();
 
   return (
+    <QuoteModalProvider>
     <div className="app-shell">
       <a className="skip-link" href="#main-content">
         {t("skipToContent")}
@@ -19,5 +21,6 @@ export function MainLayout() {
       </main>
       <SiteFooter />
     </div>
+    </QuoteModalProvider>
   );
 }
