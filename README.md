@@ -1,6 +1,8 @@
 # ECI Website
 
-![ECI cement plant](src/assets/hero-cement-plant.jpg)
+[![ECI website homepage](docs/screenshots/home.png)](https://eci-website.zaid-kreshati.workers.dev/)
+
+Live site: https://eci-website.zaid-kreshati.workers.dev/
 
 Initial frontend foundation for a corporate cement manufacturing website.
 
@@ -44,12 +46,12 @@ src/
 
 The page routes are structural placeholders; full page designs and company-specific content have not been added.
 
-## Design references
+## Screenshots
 
-Page designs live in [`design-references/`](design-references/).
+Captured from the [live website](https://eci-website.zaid-kreshati.workers.dev/).
 
-| Homepage | About us | Factories |
+| About | Products & Services | Factories |
 | --- | --- | --- |
-| ![Homepage](design-references/homepage/homepage-part1.png) | ![About us](design-references/about_us/about_us-part1.png) | ![Factories](design-references/factories/factories-part1.png) |
-| **Projects** | **Quality** | **Contact us** |
-| ![Projects](design-references/projects/projects-part1.png) | ![Quality](design-references/quality/quality-part1.png) | ![Contact us](design-references/contact_us/contact_us-part1.png) |
+| ![About](docs/screenshots/about.png) | ![Products & Services](docs/screenshots/products-services.png) | ![Factories](docs/screenshots/factories.png) |
+| **Projects** | **Quality** | |
+| ![Projects](docs/screenshots/projects.png) | ![Quality](docs/screenshots/quality.png) | |
