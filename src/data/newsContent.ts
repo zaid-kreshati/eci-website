@@ -635,20 +635,20 @@ export const newsContent: Record<Locale, NewsContent> = {
   en: {
     hero: {
       eyebrow: "Newsroom",
-      title: "Supply updates, operating notes and project coordination",
+      title: "News, announcements and insights from ECI Cement",
       description:
-        "Announcements already carried on this website, with a route to request the document behind each one. New releases are added after they are confirmed.",
+        "The latest on our operations, sustainability programmes, products and the national projects we supply — with supporting documents available on request.",
     },
     statNotes: {
-      stories: "Items currently in this newsroom",
-      topics: "Subject filters on this page",
-      documents: "Test reports and statements",
-      languages: "This page is published in both",
+      stories: "Published stories and releases",
+      topics: "From operations to sustainability",
+      documents: "Reports and statements on request",
+      languages: "Every release in Arabic and English",
     },
     statLabels: {
       stories: "Updates",
       topics: "Topics",
-      documents: "Documents",
+      documents: "Media kit",
       languages: "Languages",
     },
     searchPlaceholder: "Search updates",
@@ -732,15 +732,15 @@ export const newsContent: Record<Locale, NewsContent> = {
   ar: {
     hero: {
       eyebrow: "غرفة الأخبار",
-      title: "مستجدات التوريد والتشغيل وتنسيق المشروعات",
+      title: "أخبار وإعلانات ورؤى من ECI للأسمنت",
       description:
-        "إعلانات منشورة أصلاً في هذا الموقع، مع مسار لطلب المستند خلف كل منها. تُضاف البيانات الجديدة بعد تأكيدها.",
+        "أحدث المستجدات عن عملياتنا وبرامج الاستدامة والمنتجات والمشروعات القومية التي نوردها — مع إتاحة المستندات الداعمة عند الطلب.",
     },
     statNotes: {
-      stories: "المواد الموجودة حالياً في الغرفة",
-      topics: "مرشحات الموضوع في هذه الصفحة",
-      documents: "تقارير الاختبار والبيانات",
-      languages: "الصفحة منشورة باللغتين",
+      stories: "أخبار وبيانات صحفية منشورة",
+      topics: "من التشغيل إلى الاستدامة",
+      documents: "تقارير وبيانات عند الطلب",
+      languages: "كل بيان بالعربية والإنجليزية",
     },
     statLabels: {
       stories: "مستجدات",

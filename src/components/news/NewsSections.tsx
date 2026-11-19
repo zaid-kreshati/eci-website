@@ -18,7 +18,9 @@ export function NewsHero({ content }: { content: NewsContent }) {
 
   return (
     <section className="news-hero">
-      <Container>
+      <img className="news-hero__media" src={homeImages.hero} alt="" aria-hidden="true" />
+      <div className="news-hero__scrim" aria-hidden="true" />
+      <Container className="news-hero__inner">
         <p className="eyebrow">{content.hero.eyebrow}</p>
         <h1 className="news-hero__title">{content.hero.title}</h1>
         <p className="news-hero__description">{content.hero.description}</p>

@@ -5,6 +5,7 @@ import { publicNavigation } from "../../data/siteNavigation";
 import { useLanguage } from "../../i18n/LanguageProvider";
 import { ButtonLink } from "../common/Button";
 import { LanguageSwitcher } from "../common/LanguageSwitcher";
+import { ThemeToggle } from "../common/ThemeToggle";
 
 export function SiteHeader() {
   const { t } = useLanguage();
@@ -68,6 +69,7 @@ export function SiteHeader() {
             </NavLink>
           ))}
           <div className="navigation-actions">
+            <ThemeToggle />
             <LanguageSwitcher />
             <ButtonLink to="/contact" variant="primary" className="header-quotation" onClick={() => setIsMenuOpen(false)}>
               {t("requestQuotation")}
