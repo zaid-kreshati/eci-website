@@ -1,5 +1,7 @@
 # ECI Website
 
+![ECI cement plant](src/assets/hero-cement-plant.jpg)
+
 Initial frontend foundation for a corporate cement manufacturing website.
 
 ## Getting started
@@ -41,3 +43,13 @@ src/
 ```
 
 The page routes are structural placeholders; full page designs and company-specific content have not been added.
+
+## Design references
+
+Page designs live in [`design-references/`](design-references/).
+
+| Homepage | About us | Factories |
+| --- | --- | --- |
+| ![Homepage](design-references/homepage/homepage-part1.png) | ![About us](design-references/about_us/about_us-part1.png) | ![Factories](design-references/factories/factories-part1.png) |
+| **Projects** | **Quality** | **Contact us** |
+| ![Projects](design-references/projects/projects-part1.png) | ![Quality](design-references/quality/quality-part1.png) | ![Contact us](design-references/contact_us/contact_us-part1.png) |
