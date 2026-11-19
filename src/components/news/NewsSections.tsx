@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight, FileText, Mail, Newspaper, Search } from "lucide-react";
+import { ArrowRight, FileText, Mail, Newspaper, Search } from "lucide-react";
 import { useMemo, useState, type FormEvent } from "react";
 import { Link } from "react-router-dom";
 import { categoryLabel, type NewsArticle, type NewsCategory, type NewsContent } from "../../data/newsContent";
@@ -96,7 +96,7 @@ export function NewsBrowser({ content }: { content: NewsContent }) {
                 <div className="news-feature__actions">
                   <Link className="button button--primary" to={`/news/${featured.slug}`}>
                     {content.readStory}
-                    <ArrowLeft className="icon-flip-rtl" aria-hidden="true" size={17} />
+                    <ArrowRight className="icon-flip-rtl" aria-hidden="true" size={17} />
                   </Link>
                   <Link className="button button--secondary" to="/contact">
                     {content.requestDocument}
@@ -122,7 +122,7 @@ export function NewsBrowser({ content }: { content: NewsContent }) {
           ) : null}
           <a className="news-continue" href="#news-archive">
             <span>{content.continueArchive}</span>
-            <ArrowLeft className="icon-flip-rtl" aria-hidden="true" size={18} />
+            <ArrowRight className="icon-flip-rtl" aria-hidden="true" size={18} />
           </a>
         </Container>
       </section>
@@ -165,7 +165,7 @@ export function NewsBrowser({ content }: { content: NewsContent }) {
           </nav>
           <a className="news-continue" href="#news-media">
             <span>{content.continueMedia}</span>
-            <ArrowLeft className="icon-flip-rtl" aria-hidden="true" size={18} />
+            <ArrowRight className="icon-flip-rtl" aria-hidden="true" size={18} />
           </a>
         </Container>
       </section>
@@ -221,7 +221,7 @@ function NewsCard({ article, content }: { article: NewsArticle; content: NewsCon
         <p>{article.excerpt}</p>
         <Link className="card-link" to={`/news/${article.slug}`}>
           {content.readStory}
-          <ArrowLeft className="icon-flip-rtl" aria-hidden="true" size={16} />
+          <ArrowRight className="icon-flip-rtl" aria-hidden="true" size={16} />
         </Link>
       </div>
     </article>

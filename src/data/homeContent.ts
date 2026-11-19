@@ -487,4 +487,297 @@ const ar: HomeCopy = {
   },
 };
 
-export const homeContent: Record<"ar" | "en", HomeCopy> = { ar, en: ar };
+const en: HomeCopy = {
+  hero: {
+    badge: "Certified to Egyptian Standard EOS 4756-1 and EN 197-1",
+    title: "Building the foundations of modern Egypt — engineered strength that lasts",
+    description:
+      "A leading Egyptian producer of high-performance clinker, CEM I Portland cement and lower-carbon CEM II cement. We supply the country's largest national projects along the Nile with superior structural strength, EOS 4756 certified quality and low-emission cement solutions.",
+    explore: "Explore our products",
+    quotation: "Request bulk supply",
+  },
+  statistics: [
+    { value: "12.5M", label: "Metric tonnes per year", description: "Peak clinker and cement production capacity", icon: "capacity" },
+    { value: "3 sites", label: "Manufacturing complexes & ports", description: "Suez, Beni Suef and Sokhna export berths", icon: "locations" },
+    { value: "99.8%", label: "On-time shipments", description: "Automated digital weighbridges running 24/7", icon: "delivery" },
+    { value: "-25%", label: "Lower carbon emissions", description: "Through waste-heat recovery and clean energy", icon: "environment" },
+  ],
+  intro: {
+    eyebrow: "A record of engineering excellence",
+    title: "More than 35 years of engineering leadership in Egyptian cement",
+    paragraphs: [
+      "Since our first production line, the group has been shaped by a rigorous engineering mindset: supplying the strongest, most dependable building materials in the Middle East and Africa. We have built an integrated supply chain spanning our own quarries, state-of-the-art calcination kilns and bulk and bagged distribution networks.",
+      "Every shipment we supply is 100% laboratory-verified through real-time robotic X-ray analysis (XRF/XRD). This makes us a strategic supplier to the most demanding national projects, including the Suez Canal tunnels, power stations, the metro and the high-speed electric railway.",
+    ],
+    metrics: [
+      { value: "12.5M", label: "Tonnes per year", description: "Leading crushing and calcination capacity" },
+      { value: "99.8%", label: "Schedule accuracy", description: "Uninterrupted loading and delivery" },
+      { value: "3", label: "Industrial complexes", description: "Own production lines and power plants" },
+      { value: "45+", label: "National projects", description: "Approved concrete supply partner" },
+    ],
+    features: [
+      { title: "100% automated lab testing", description: "Continuous round-the-clock spectral analysis" },
+      { title: "Certified bulk fleet", description: "450+ trucks equipped with GPS tracking" },
+      { title: "Marine export terminals", description: "Direct vessel loading on the Red Sea and Mediterranean" },
+      { title: "Green cement initiative", description: "Up to 30% alternative fuel substitution" },
+    ],
+    certifications: {
+      title: "International and Egyptian accreditations",
+      description: "Certified to ISO 9001, ISO 14001 and ISO 45001 for quality, environment and occupational safety, and compliant with American ASTM C150 and European EN 197-1 standards.",
+      badges: ["EOS 4756", "EN 197-1", "ASTM C150", "ISO 9001:2015"],
+    },
+  },
+  products: {
+    eyebrow: "ECI GROUP technical catalogue",
+    title: "High-performance standard cement products",
+    description:
+      "Advanced cement solutions that undergo regular physical and chemical testing in our digital laboratories, ensuring compressive strength and resistance to high stresses for infrastructure, high-rise buildings and specialist concrete works.",
+    filters: ["All grades", "Bulk silo", "50 kg bags", "1.5 t jumbo bags"],
+    requestQuote: "Request a quote",
+    tds: "Technical data sheet (TDS)",
+    items: [
+      {
+        image: bulkSiloImage,
+        imageAlt: "Bulk cement storage silos and loading platform",
+        badges: ["Building code ECP 203", "EOS 4756-1 / EN 197-1"],
+        category: "Ordinary Portland, very high strength",
+        title: "High early strength",
+        gradeCode: "CEM I 52.5N",
+        description: "Ideal for pre-stressed bridges, deep piles and high-rise towers that need early formwork striking.",
+        specs: [
+          { label: "Compressive strength (28 days)", value: "≥ 52.5 N/mm²" },
+          { label: "Compressive strength (2 days)", value: "≥ 20.0 N/mm²" },
+          { label: "Initial setting time", value: "≥ 45 min" },
+        ],
+        packaging: ["Bulk", "50 kg bags", "1.5 t jumbo"],
+      },
+      {
+        image: coastalPlantImage,
+        imageAlt: "Coastal cement plant on the Mediterranean",
+        badges: ["ASTM C150 Type V", "EOS 4756-1"],
+        category: "Salt and sulfate resistant",
+        title: "Marine sulfate resistant",
+        gradeCode: "SRC (Type V)",
+        description: "Formulated to protect reinforcement from corrosion in coastal environments, groundwater, sewer networks and Mediterranean and Red Sea ports.",
+        specs: [
+          { label: "Tricalcium aluminate content", value: "≤ 3.5%" },
+          { label: "Compressive strength (28 days)", value: "≥ 42.5 N/mm²" },
+          { label: "Sulfate expansion (14 days)", value: "≤ 0.040%" },
+        ],
+        packaging: ["Bulk", "50 kg bags", "1.5 t jumbo"],
+      },
+      {
+        image: baggedImage,
+        imageAlt: "Bagged cement stacked on loading pallets",
+        badges: ["EOS 4756-1 / EN 197-1", "Ministry of Transport approved"],
+        category: "Ordinary Portland, rapid hardening",
+        title: "Rapid hardening",
+        gradeCode: "CEM I 42.5R",
+        description: "Designed for ready-mix concrete, block and interlock factories and central batching plants that need fast mould cycles.",
+        specs: [
+          { label: "Compressive strength (28 days)", value: "≥ 42.5 N/mm²" },
+          { label: "Compressive strength (2 days)", value: "≥ 20.0 N/mm²" },
+          { label: "Initial setting time", value: "≥ 60 min" },
+        ],
+        packaging: ["Bulk", "50 kg bags", "1.5 t jumbo"],
+      },
+      {
+        image: constructionSiteImage,
+        imageAlt: "Concrete construction site with tower crane",
+        badges: ["International EPD", "-28% carbon footprint"],
+        category: "Portland limestone, low emission",
+        title: "Eco-limestone green",
+        gradeCode: "CEM II/B-L 32.5N",
+        description: "The best choice for sustainable green building, with excellent workability and strong performance in plastering and standard reinforced concrete.",
+        specs: [
+          { label: "Compressive strength (28 days)", value: "≥ 32.5 N/mm²" },
+          { label: "Carbon emission reduction", value: "-28%" },
+          { label: "Initial setting time", value: "≥ 75 min" },
+        ],
+        packaging: ["Bulk", "50 kg bags"],
+      },
+    ],
+  },
+  liveQuality: {
+    label: "Live from the central testing lab (Suez & Beni Suef) | Updated every two hours",
+    blaine: "Today's average Blaine fineness: 3,680 cm²/g",
+    expansion: "Soundness expansion: 0.8 mm (limit ≤ 10 mm)",
+    actions: ["Live certificate of analysis (CoA)", "Sample accuracy check"],
+  },
+  services: {
+    eyebrow: "Integrated supply chain",
+    title: "Engineering and field logistics services",
+    description:
+      "We don't just produce cement — we run a smart logistics network that delivers bulk and bagged product to the hardest-to-reach sites and the largest concrete plants without interruption.",
+    items: [
+      { title: "On-site mix design", description: "A mobile laboratory consultancy team supports contractors on major projects to test optimal mix ratios, achieving exceptional strength with notable cost savings.", tag: "On-site engineering support" },
+      { title: "24/7 bulk transport fleet", description: "More than 250 silo trucks and tankers with GPS tracking and automated weighbridge control keep ready-mix plants supplied day and night.", tag: "High discharge capacity" },
+      { title: "Rail and sea export", description: "Rail lines run inside our plants, and dedicated berths at Sokhna and Adabiya handle vessels of up to 50,000 tonnes for regional export.", tag: "Domestic and international shipping" },
+      { title: "Clinker and pozzolana supply", description: "Large contract supply of grey clinker and natural pozzolana to regional grinding plants, dams and port projects on strict delivery schedules.", tag: "Industrial supply contracts" },
+    ],
+  },
+  factories: {
+    eyebrow: "Industrial assets and infrastructure",
+    title: "Our strategic industrial complexes",
+    description:
+      "The group owns and operates advanced manufacturing sites that connect quarrying lines directly to rail corridors and export ports, securing structural cement supply with the highest operational reliability.",
+    summary: [
+      { label: "12.5 million t", value: "Total annual capacity" },
+      { label: "3", value: "Logistics hubs" },
+    ],
+    cta: "Technical accreditation file",
+    items: [
+      {
+        image: desertFactoryImage,
+        imageAlt: "Integrated cement plant complex in Suez",
+        badges: ["Largest main complex", "Suez — Ain Sokhna road"],
+        location: "Suez — Ain Sokhna road",
+        capacityCode: "MT/Y 6.5",
+        title: "Ain Sokhna integrated complex",
+        description: "A large facility with two dry-process FLSmidth lines and a 15 MW waste-heat recovery plant to reduce its carbon footprint, directly connected to the Sokhna port berth.",
+        specs: [
+          { label: "Production capacity", value: "6.5 million t / year" },
+          { label: "Kiln technology", value: "FLSmidth IKN Clinker" },
+          { label: "Self-generated power", value: "15 MW (WHR system)" },
+          { label: "Logistics link", value: "Sokhna port berth" },
+        ],
+        compliance: "Compliant with EN 197-1",
+      },
+      {
+        image: quarryImage,
+        imageAlt: "Limestone quarry and mining lines in Beni Suef",
+        badges: ["Rail and river shipping", "East Nile industrial zone, Beni Suef"],
+        location: "East Nile industrial zone, Beni Suef",
+        capacityCode: "MT/Y 4.2",
+        title: "Beni Suef tunnel cement plant",
+        description: "Specialised in cement for tunnels and deep water structures, with a dedicated rail line and strategic Nile silos serving Upper Egypt and Greater Cairo.",
+        specs: [
+          { label: "Production capacity", value: "4.2 million t / year" },
+          { label: "Engineering focus", value: "Tunnel and water cement" },
+          { label: "Rail transport", value: "4 trains per day" },
+          { label: "River shipping", value: "Floating Nile silos" },
+        ],
+        compliance: "Compliant with Egyptian standard 4756",
+      },
+      {
+        image: portTerminalImage,
+        imageAlt: "Cement handling and export terminal at El Dekheila port",
+        badges: ["International export arm", "El Dekheila port — Alexandria (Mediterranean)"],
+        location: "El Dekheila port — Alexandria (Mediterranean)",
+        capacityCode: "MT/Y 1.8",
+        title: "El Dekheila marine terminal",
+        description: "An advanced handling and export terminal serving Africa and the Mediterranean basin, with bulk loading berths running at up to 1,200 tonnes per hour.",
+        specs: [
+          { label: "Handling capacity", value: "1.8 million t / year" },
+          { label: "Bulk loading rate", value: "1,200 t / hour" },
+          { label: "Draft depth", value: "14 m (Panamax vessels)" },
+          { label: "Storage silos", value: "60,000 t bulk capacity" },
+        ],
+        compliance: "Compliant with ASTM C150 export standards",
+      },
+    ],
+  },
+  projects: {
+    eyebrow: "Major national projects",
+    banner: "Simultaneous supply to more than 45 vital national sites",
+    title: "Helping build Egypt's landmark projects",
+    description:
+      "Proud supplier to the country's greatest urban corridors and strategic state projects — advanced concrete that stands as a testament to modern engineering from the Nile to the seas.",
+    items: [
+      {
+        image: towersImage,
+        imageAlt: "Central Business District towers in the New Administrative Capital",
+        badges: ["New Administrative Capital", "Central Business District (CBD)"],
+        title: "The Iconic Tower and surrounding towers",
+        description: "Supplied the largest continuous concrete pour in the Middle East for the base of the 393-metre tower, using low-heat, high-strength cement.",
+        stats: [
+          { label: "Quantity supplied", value: "450,000 t" },
+          { label: "Cement grade", value: "CEM I 52.5N Ultra-High" },
+          { label: "Main contractor", value: "CSCEC with Arab Contractors" },
+        ],
+        footer: "Pour tested and approved 100%",
+      },
+      {
+        image: bridgeImage,
+        imageAlt: "Suspension bridge over the Nile on the Rod El Farag axis",
+        badges: ["Greater Cairo", "Rod El Farag axis and the Nile"],
+        title: "Nile axis and Cairo Monorail",
+        description: "The world's widest suspension bridge recorded by Guinness, plus East and West Nile monorail tracks and stations built to withstand dynamic vibration.",
+        stats: [
+          { label: "Quantity supplied", value: "320,000 t" },
+          { label: "Cement grade", value: "CEM I 52.5R Fast Curing" },
+          { label: "Main contractor", value: "Orascom and Arab Contractors alliance" },
+        ],
+        footer: "Compliant with Engineering Authority specifications",
+      },
+      {
+        image: waterStationImage,
+        imageAlt: "Tahya Misr marine terminal at Alexandria port",
+        badges: ["Alexandria port", "Container and cargo berths"],
+        title: "Tahya Misr marine terminal",
+        description: "Quay walls and deep breakwaters exposed to highly sulfated Mediterranean seawater, built with mixes that resist chemical corrosion.",
+        stats: [
+          { label: "Quantity supplied", value: "180,000 t" },
+          { label: "Cement grade", value: "SRC 42.5N Sulfate Resistant" },
+          { label: "Main contractor", value: "Petrojet and Egyptian Terminals Group" },
+        ],
+        footer: "Superior chloride-ion resistance",
+      },
+      {
+        image: monorailImage,
+        imageAlt: "Elevated monorail tracks in New Alamein City",
+        badges: ["North Coast", "New Alamein City"],
+        title: "Alamein towers and artificial lakes",
+        description: "Beachfront skyscrapers, service tunnels and lakes built with special pozzolanic cement that reduces water permeability and coastal humidity damage.",
+        stats: [
+          { label: "Quantity supplied", value: "260,000 t" },
+          { label: "Cement grade", value: "CEM II Marine Pozzolanic" },
+          { label: "Main contractor", value: "Hassan Allam Holding and Orascom" },
+        ],
+        footer: "Full protection for internal reinforcement",
+      },
+    ],
+  },
+  quality: {
+    eyebrow: "Uncompromising quality assurance",
+    title: "Strict quality standards and global accreditations",
+    description:
+      "ECI products undergo precise mechanical and chemical testing in our accredited laboratories, using robotic compression and analysis equipment to guarantee consistent performance in the harshest construction environments.",
+    stat: { value: "100%", title: "Compliance with structural and hydraulic specifications", note: "Clinker kilns tested every 60 minutes" },
+    lab: {
+      eyebrow: "Central laboratory for structural physics and chemistry",
+      title: "Continuous mechanical testing matrix",
+      description: "Samples are drawn and tested for compressive strength and Blaine air permeability with high precision, supervised by senior Egyptian and international chemists and engineers.",
+      metric: "58.4 MPa @ 28 days",
+      metricNote: "Standard hydraulic strength — approved for high-strength concrete use",
+      imageAlt: "Central laboratory testing the compressive strength of cement samples",
+    },
+    certifications: [
+      { badge: "Egyptian building code", title: "Egyptian Standard EOS 4756-1", description: "Mandatory accreditation for Portland building cement from the Egyptian Organization for Standardization and Quality, ensuring the mix suits Egyptian soil and climate.", chip: "Expansion and sulfate resistance testing", icon: "badge" },
+      { badge: "European Union", title: "European conformity mark EN 197-1 CE", description: "Full compliance with EU structural standards, allowing our products to be exported to Mediterranean and European infrastructure projects.", chip: "CEM I 42.5R / CEM I 52.5N grades", icon: "globe" },
+      { badge: "Quality management", title: "ISO 9001:2015 quality management", description: "Governance of industrial and logistics operations, from the limestone quarries of Suez and Beni Suef to final shipment packing.", chip: "Precise digital tracking of every batch", icon: "award" },
+      { badge: "Sustainability", title: "ISO 14001:2015 environmental management", description: "Fuel-related carbon emissions cut by 35% using electrostatic filters and waste-heat recovery.", chip: "Zero industrial discharge to waterways", icon: "leaf" },
+      { badge: "Occupational health & safety", title: "ISO 45001:2018", description: "A workplace held to the highest engineering safety standards for more than 3,800 staff across kilns, grinding lines and the field fleet.", chip: "10+ million hours without incident", icon: "shield" },
+      { badge: "Environmental declaration", title: "Environmental Product Declaration (EPD)", description: "A certified international declaration documenting the low carbon footprint per tonne of our product, helping contractors earn green building (LEED) points.", chip: "Approved by international consultancies", icon: "file" },
+    ],
+  },
+  news: {
+    eyebrow: "Group news and media",
+    title: "Latest news and updates",
+    archive: "Press release archive",
+    readMore: "Read the full story",
+    items: [
+      { date: "May 2025", category: "Renewable energy & decarbonisation", title: "ECI starts operating a 15 MW solar power plant at Ain Sokhna", excerpt: "The project covers 22% of the main complex's electricity needs, cutting annual emissions by more than 42,000 tonnes of CO₂ equivalent.", icon: "sun" },
+      { date: "April 2025", category: "Innovation & advanced materials", title: "New high-performance pozzolanic cement grade earns national green building certification", excerpt: "A new engineered formula with exceptional resistance to salts and groundwater, designed for foundations on the North Coast and in the New Delta.", icon: "flask" },
+      { date: "March 2025", category: "Logistics & digital shipping", title: "Shipping fleet upgraded with telemetry and 100% automated weighbridges", excerpt: "A central digital platform tracks mobile silo loads in real time and links to contractors' ERP systems so deliveries reach critical pours on time.", icon: "truck" },
+    ],
+  },
+  cta: {
+    title: "Request a quotation for bulk supply",
+    description: "Our engineering sales team is ready to provide a detailed quotation and delivery schedule for your site within 24 hours.",
+    primary: "Request a quotation",
+    secondary: "Talk to a sales engineer",
+  },
+};
+
+export const homeContent: Record<"ar" | "en", HomeCopy> = { ar, en };

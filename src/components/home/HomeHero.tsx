@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight, Building2, Clock3, Factory, Leaf, type LucideIcon } from "lucide-react";
+import { ArrowRight, Building2, Clock3, Factory, Leaf, type LucideIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import type { HomeCopy } from "../../data/homeContent";
 import { homeImages } from "../../data/homeContent";
@@ -18,7 +18,7 @@ export function HomeHero({ content }: { content: HomeCopy["hero"] }) {
           <div className="home-hero__actions">
             <ButtonLink className="button--lg" to="/products-services">
               {content.explore}
-              <ArrowLeft className="icon-flip-rtl" aria-hidden="true" size={18} />
+              <ArrowRight className="icon-flip-rtl" aria-hidden="true" size={18} />
             </ButtonLink>
             <Link className="button button--lg button--hero-secondary" to="/contact">
               {content.quotation}

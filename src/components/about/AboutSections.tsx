@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight, CheckCircle2, Compass, Leaf, ShieldCheck, Target, Users } from "lucide-react";
+import { ArrowRight, CheckCircle2, Compass, Leaf, ShieldCheck, Target, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import type { AboutContent } from "../../data/aboutContent";
 import { Container } from "../common/Container";
@@ -34,5 +34,5 @@ export function AboutStandards({ content }: { content: AboutContent }) {
 }
 
 export function AboutCta({ content }: { content: AboutContent }) {
-  return <section className="about-cta"><Container className="about-cta__inner"><div><h2>{content.cta.title}</h2><p>{content.cta.description}</p></div><div><Link className="button button--primary" to="/contact">{content.cta.primary}<ArrowLeft className="icon-flip-rtl" aria-hidden="true" size={17} /></Link><Link className="button button--hero-secondary" to="/contact">{content.cta.secondary}<ArrowRight className="icon-flip-rtl" aria-hidden="true" size={17} /></Link></div></Container></section>;
+  return <section className="about-cta"><Container className="about-cta__inner"><div><h2>{content.cta.title}</h2><p>{content.cta.description}</p></div><div><Link className="button button--primary" to="/contact">{content.cta.primary}<ArrowRight className="icon-flip-rtl" aria-hidden="true" size={17} /></Link><Link className="button button--hero-secondary" to="/contact">{content.cta.secondary}<ArrowRight className="icon-flip-rtl" aria-hidden="true" size={17} /></Link></div></Container></section>;
 }

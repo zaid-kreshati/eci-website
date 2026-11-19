@@ -9,7 +9,8 @@ import { QualityPage } from "../pages/QualityPage";
 import { NewsArticlePage } from "../pages/NewsArticlePage";
 import { NewsPage } from "../pages/NewsPage";
 import { NotFoundPage } from "../pages/NotFoundPage";
-import { PagePlaceholder } from "../pages/PagePlaceholder";
+import { ContactPage } from "../pages/ContactPage";
+import { CareersPage } from "../pages/CareersPage";
 import { StyleGuidePage } from "../pages/StyleGuidePage";
 
 export const router = createBrowserRouter([
@@ -25,14 +26,8 @@ export const router = createBrowserRouter([
       { path: "/quality", element: <QualityPage /> },
       { path: "/news", element: <NewsPage /> },
       { path: "/news/:slug", element: <NewsArticlePage /> },
-      {
-        path: "/contact",
-        element: <PagePlaceholder titleKey="contactTitle" />,
-      },
-      {
-        path: "/careers",
-        element: <PagePlaceholder titleKey="careersTitle" />,
-      },
+      { path: "/contact", element: <ContactPage /> },
+      { path: "/careers", element: <CareersPage /> },
       { path: "*", element: <NotFoundPage /> },
     ],
   },

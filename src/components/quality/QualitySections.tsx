@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight, Award, BadgeCheck, Beaker, CheckCircle2, ClipboardList, FileCheck2, FlaskConical, Gauge, Leaf, ShieldCheck } from "lucide-react";
+import { ArrowRight, Award, BadgeCheck, Beaker, CheckCircle2, ClipboardList, FileCheck2, FlaskConical, Gauge, Leaf, ShieldCheck } from "lucide-react";
 import { useId, useState, type FormEvent } from "react";
 import { Link } from "react-router-dom";
 import type { QualityContent } from "../../data/qualityContent";
@@ -20,7 +20,7 @@ export function QualityHero({ content }: { content: QualityContent }) {
         <div className="quality-hero__actions">
           <a className="button button--primary" href="#certifications">
             {content.hero.primary}
-            <ArrowLeft className="icon-flip-rtl" aria-hidden="true" size={17} />
+            <ArrowRight className="icon-flip-rtl" aria-hidden="true" size={17} />
           </a>
           <Link className="button button--hero-secondary" to="/contact">
             {content.hero.secondary}
@@ -205,7 +205,7 @@ export function QualityLabCheck({ content }: { content: QualityContent }) {
           </label>
           <button className="button button--primary" type="submit" disabled={batch.trim().length === 0}>
             {content.labCheck.submit}
-            <ArrowLeft className="icon-flip-rtl" aria-hidden="true" size={17} />
+            <ArrowRight className="icon-flip-rtl" aria-hidden="true" size={17} />
           </button>
           <p className="quality-labcheck__status" role="status" aria-live="polite">
             {status}
